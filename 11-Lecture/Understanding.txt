@@ -1,0 +1,14 @@
+CSS Stands for Casecading Style Sheet
+Three Types of CSS
+Inline CSS
+Internal CSS
+External CSS
+
+selector {
+    declaration
+    property:value;
+    property:value;
+    property:value;
+    property:value;
+
+}

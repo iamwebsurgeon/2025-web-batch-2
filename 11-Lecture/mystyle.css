@@ -1,0 +1,17 @@
+p{
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+    /* text-align: right; */
+}
+#mycustomdesignforp{
+    color: red;
+    text-decoration: none;
+    text-align: right;
+    
+}
+.mydesign{
+    color: green;
+    text-align: center;
+
+}

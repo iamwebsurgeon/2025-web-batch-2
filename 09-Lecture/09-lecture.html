@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        09 Lecture - Working with Form
+    </title>
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Info</legend>
+        <label for="full_name">Full Name</label>
+        <input type="text" required id="full_name" placeholder="Enter your name"> <br> <br>
+        <label for="email">Email</label>
+        <input type="email" id="email"> <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password"> <br><br>
+        <label for="age">Age</label>
+        <input type="number" step="5" name="age" id="age" required   value="5" min="0" max="100">
+        <br><br>
+        <label for="">Range</label>
+        <input type="range" min="10" max="50"> <br><br>
+        <label for="">Telephone</label>
+        <input type="tel" required>
+        <br><br>
+        <label for="cv">Upload Your CV</label>
+        <input type="file" required id="cv"> <br> <br>
+
+        <label for="search">Upload Your CV</label>
+        <input type="search"  id="search"> <br> <br>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="8" cols=50"></textarea> <br><br>
+
+        <label for="">Gender</label>
+        <input type="radio" name="gender" checked value="male">Male
+        <input type="radio"  name="gender" value="female">Female
+        <input type="radio" name="gender" value="transgender">Transgender <br><br>   
+
+        <label for="">Your Interests</label>
+        <input type="checkbox" name="Interests[]" value="Books Reading"> Books Reading
+        <input type="checkbox" name="Interests[]" value="Internet Surfing"> Internet Surfing 
+        <input type="checkbox" name="Interests[]" value="Horse Riding"> Horse Riding
+        <input type="checkbox" name="Interests[]" value="Hunting"> Hunting <br><br>
+
+        <label for="country">Select Your Country</label>
+        <select name="country" id="country" multiple>
+            <option value="Pak">Pakistan</option>
+            <option value="Ind">India</option>
+            <option value="Iran">Iran</option>
+            <option value="Turkey">Turkey</option>
+        </select>
+        
+
+
+    </fieldset>
+     <br>
+
+<input type="submit" value="Save">
+<input type="reset" value="Refresh">
+<button type="">Click Me</button>
+    </form>
+
+    
+</body>
+</html>
