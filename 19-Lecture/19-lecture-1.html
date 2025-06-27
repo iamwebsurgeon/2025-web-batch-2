@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Table</title>
+    <style>
+      table,  td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    
+        table{
+            /* width: 600px; */
+            width: 50%;
+        }
+        td, th{
+            /* padding-top:20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px; */
+            padding: 20px 15px;
+        }
+       tbody tr:nth-child(odd) {
+            background-color: lightpink;
+        }
+               tbody tr:nth-child(even) {
+            background-color: brown;
+            color: white;
+        }
+        td:hover{
+            font-size: 30px;
+        }
+        tfoot tr th{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <!-- There are 3 parts of table 
+    1. Table Head
+    2. Table Body 
+    3. Table Footer  -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Telephone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jack</td>
+            <td>Sales</td>
+            <td>5555-5555</td>
+            <td>
+                <button>Edit</button>
+            </td>
+        </tr>
+                <tr>
+            <td>John</td>
+            <td>Admin</td>
+            <td>5555-5555</td>
+        </tr>
+                <tr>
+            <td>James</td>
+            <td>Sales</td>
+            <td>5555-5555</td>
+        </tr>
+                <tr>
+            <td>Jack</td>
+            <td>Sales</td>
+            <td>5555-5555</td>
+        </tr>
+                <tr>
+            <td>John</td>
+            <td>Admin</td>
+            <td>5555-5555</td>
+        </tr>
+                <tr>
+            <td>James</td>
+            <td>Sales</td>
+            <td>5555-5555</td>
+        </tr>
+                <tr>
+            <td>Jack</td>
+            <td>Sales</td>
+            <td>5555-5555</td>
+        </tr>
+                <tr>
+            <td>John</td>
+            <td>Admin</td>
+            <td>5555-5555</td>
+        </tr>
+                <tr>
+            <td>James</td>
+            <td>Sales</td>
+            <td>5555-5555</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Total</th>
+            <th>Total</th>
+            <th>Total</th>
+        </tr>
+    </tfoot>
+</table>
+    
+</body>
+</html>
