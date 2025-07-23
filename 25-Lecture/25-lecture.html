@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .row {
+            width: 80%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box {
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            float: left;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .box {
+                background-color: lightblue;
+                color: green;
+                padding: 10px 30px;
+
+            }
+            #my-hidden-box{
+                display: none;
+            }
+
+            body {
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus.
+        </div>
+        <div class="box" id="my-hidden-box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus.
+        </div>
+    </div>
+
+</body>
+
+</html>

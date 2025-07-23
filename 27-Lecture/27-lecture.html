@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 2px solid black;
+            padding: 10px;
+            /* transform: translateX(50px);
+            transform: translateY(50px); */
+            /* transform: translate(50px, 100px); */
+
+            transform: rotateY(90deg);
+        }
+
+        .img {
+            width: 200px;
+            animation-name: rotateAndScale;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+             animation-direction: alternate;
+            margin-top: 50px;
+        }
+
+        @keyframes rotateAndScale {
+            0% {
+
+                /* transform: scaleX(1) rotateY(0deg) translateX(0px); */
+            }
+
+            /* 25% {
+        
+                transform: rotateY(90deg) translateX(300px);
+            } */
+
+            50% {
+            
+                /* transform: rotateY(180deg) translateX(600px); */
+                transform: scale(0.5) translate(300px) rotate(360deg);
+            }
+
+            100% {
+
+                /* transform: scaleX(1.5) rotateY(360deg) translateX(1200px); */
+                /* transform: scale(2.0) rotate(360deg); */
+                transform: scale(1.0) translate(600px) rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div> -->
+    <img class="img" src="star.png" alt="">
+        <img class="img" src="star.png" alt="">
+            <img class="img" src="star.png" alt="">
+                <img class="img" src="star.png" alt="">
+                    <img class="img" src="star.png" alt="">
+</body>
+
+</html>
